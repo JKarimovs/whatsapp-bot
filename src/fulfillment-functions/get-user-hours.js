@@ -24,7 +24,7 @@ function returnUserHours(agent){
     .then(result => {
 
         // Bot Response String
-        userData = 'Sure. Here\'s your data on the hours you\'ve contributed with us. \n\n' +
+        userData = 'Here\'s your data on the hours you\'ve contributed with us. \n\n' +
                    '*Total hours contributed:* ' + result[0].fields['Hours in Task Rabbit'] + ' Hours. \n' +
                    '*Hours this week:*  ' + result[0].fields['Hours this week'] + ' Hours. \n' +
                    '*Hours this month:* ' + result[0].fields['Hours this month'] + ' Hours. \n' +

@@ -24,7 +24,7 @@ function returnUserData(agent){
     .then(result => {
 
         // Bot Response String
-        userData = 'Sure thing. Here\'s the profile data we have on you. \n\n' +
+        userData = 'Here\'s the profile data we have on you. \n\n' +
                    '*Name:* ' + result[0].fields.Name + '\n' +
                    '*Email:* ' + result[0].fields.Email + '\n' +
                    '*Phone Number:* ' + result[0].fields[airtableField] + '\n' +

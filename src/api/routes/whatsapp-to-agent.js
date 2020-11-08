@@ -9,6 +9,8 @@ router.route('/').post( async (req, res) => {
     let message = req.body.Body;
     let senderID = req.body.From;
 
+    // console.log(req.body);
+
     // Send the user message to Dialogflow Agent
     dfClient.messageDfAgent(message, senderID);
 
