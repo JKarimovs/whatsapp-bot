@@ -34,12 +34,12 @@ async function messageDfAgent(message, senderID, projectId = process.env.DF_PROJ
 
     };
     
-    // console.log('request: ' + JSON.stringify(request));       // CHECK REQUEST
+    // console.log('request: ' + JSON.stringify(request));        // CHECK REQUEST
 
     const responses = await sessionClient.detectIntent(request);  // Send request and log result
     const result = responses[0].queryResult;
 
-    // console.log('result: ' + JSON.stringify(result));              // CHECK RESULT
+    // console.log('result: ' + JSON.stringify(result));          // CHECK RESULT
 
     // ==============================================================================
     // COMMENT WHILE TESTING TO SAVE TWILIO CREDIT.

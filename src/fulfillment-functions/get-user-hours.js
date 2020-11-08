@@ -1,5 +1,4 @@
 
-
 function returnUserHours(agent){
     
     senderID = agent.originalRequest.payload.senderID; // Get the senders phone number from the payload. Originally added in the request in  dialogflow-client.js
@@ -36,7 +35,7 @@ function returnUserHours(agent){
     })
     .catch(error => {
         console.log('Error at catch: ' + error);
-        agent.add('Sorry, I couldn\'t find you in our database. Contact the administration to make sure you\'re in our system.'); // Bot Response to User
+        agent.add('Sorry, I couldn\'t find you in our system. Contact the administration to make sure you\'re registered.'); // Bot Response to User
     })
 }
 
