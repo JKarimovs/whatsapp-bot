@@ -29,7 +29,8 @@ function updateUserProfile(agent){
     var Airtable = require('airtable');
     var base = new Airtable({apiKey: process.env.AIRTABLE_API_KEY}).base(process.env.AIRTABLE_BASE_ID);
 
-    // Airtable Data Query (First get the row ID for the requesting user, then update the requested field using the retrieved id)
+    // Airtable Data Query
+    // First get the row ID for the requesting user, then update the requested field using the retrieved id
     return base(airtableBase)
     .select({
         maxRecords: 1,  // Selecting the first record in Complete Grid:
